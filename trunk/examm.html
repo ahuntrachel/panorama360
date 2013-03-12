@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>API controls</title>
+	
+        <style type="text/css">
+            .sep { margin-bottom: 10px; }
+        </style>
+        
+        <link rel="stylesheet" type="text/css" href="magic3600.css" />
+        
+        <script type="text/javascript" src="magic360.js"></script>
+        
+
+	
+</head>
+<body>
+<table class="mtbl">
+<tr>
+    <td class="leftcol">
+     </td>
+    <td class="rTd">
+        <h1>API controls</h1>
+        
+        <p>You can start and stop Magic 360, spin and magnify image by using the API.</p>
+       
+       <a id="spin-1" class="Magic360" data-magic360-options="filename:shoe-360-{col}.jpg;"><img src="shoe-360-01.jpg"/></a>
+       <br><br>
+       <div class="">
+        <button id="button-stop"onclick="Magic360.stop('spin-1');">Stop Magic 360</button>
+        <button id="button-start" onclick="Magic360.start('spin-1');">Start Magic 360</button>
+        <button onclick="Magic360.spin('spin-1');">Spin shoe</button>
+        <div class="sep"></div>
+        <button onclick="Magic360.pause('spin-1');">Pause spin</button>
+        <button onclick="Magic360.spin('spin-1', -1);">Spin one frame backward</button>
+        <button onclick="Magic360.spin('spin-1', 1);">Spin one frame forward</button>
+        </div>
+       
+    </td>
+</tr></table></body></html>
